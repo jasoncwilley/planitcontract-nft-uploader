@@ -1,0 +1,23 @@
+/* HomePage.module.css */
+.container {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+  }
+  
