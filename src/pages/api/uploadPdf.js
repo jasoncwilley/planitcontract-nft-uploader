@@ -5,10 +5,10 @@ import mysql from 'mysql2';
 export default function handler(req, res) {
   if (req.method === 'POST') {
     const connection = mysql.createConnection({
-      host: process.env.HOST,
-      user: process.env.USER,
-      password: process.env.PASSWORD,
-      database: process.env.DATABASE,
+      host: 'localhost',
+      user: 'root',
+      password: 'password',
+      database: 'test',
     });
 
     const { userId, txId } = req.body;

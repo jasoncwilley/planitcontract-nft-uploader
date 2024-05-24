@@ -3,10 +3,10 @@ import mysql from 'mysql2/promise';
 
 export default async function handler(req, res) {
   const connection = await mysql.createConnection({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+    database: 'test',
   });
 
   try {
